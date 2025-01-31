@@ -11,11 +11,9 @@ const Cliente = sequelize.define('cliente', {
         type: DataTypes.STRING,
         allowNull: false
     },
-    email: {
-        type: DataTypes.STRING(100),
-        allowNull: true,//permite saber si el valor puede llegar  a ser nullo o llenarse vacio
-        unique: true,
-        // allowNull por defecto esta en true
+    buys: {
+        type: DataTypes.STRING,
+        allowNull: false
     },
     numberPhone: {
         type: DataTypes.INTEGER,
